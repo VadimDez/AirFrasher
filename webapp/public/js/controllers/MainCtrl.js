@@ -58,35 +58,16 @@ angular.module('MainCtrl', ['TemperatureService', 'HumidityService']).controller
     };
 
 
-    //Temperature.getSensor1().success(function (data) {
-        $scope.temperature1 = [
-            {x: 0, value: 25},
-            {x: 1, value: 24.3},
-            {x: 2, value: 24.4},
-            {x: 3, value: 24.5},
-            {x: 4, value: 24},
-            {x: 5, value: 23},
-            {x: 6, value: 23.3},
-            {x: 7, value: 23.5},
-            {x: 8, value: 24},
-            {x: 9, value: 23},
-            {x: 10, value: 24}
-        ];//makeDataArray(data);
+    Temperature.getSensor1().success(function (data) {
+        $scope.temperature1 = makeDataArray(data);
 
-    //});
+    });
 
 
 
-    //Temperature.getSensor2().success(function (data) {
-        $scope.temperatureSensor2 = [
-            {x: 0, value: 12},
-            {x: 1, value: 8},
-            {x: 2, value: 8},
-            {x: 3, value: 9},
-            {x: 4, value: 8},
-            {x: 5, value: 10}
-        ];//makeDataArray(data);
-    //});
+    Temperature.getSensor2().success(function (data) {
+        $scope.temperatureSensor2 = makeDataArray(data);
+    });
 
 
 
