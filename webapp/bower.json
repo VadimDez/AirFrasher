@@ -1,0 +1,13 @@
+{
+  "name": "app-node-angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "n3-line-chart": "~1.1.4",
+    "jquery": "~2.1.3"
+  }
+}

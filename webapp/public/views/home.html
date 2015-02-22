@@ -1,0 +1,10 @@
+<div class="row sub-menu">
+    <div class="col-md-4" ng-click="showPath('charts')" ng-class="{active: show == 'charts'}">CHARTS <span class="big"></span><span class="small"></span></div>
+    <div class="col-md-4" ng-click="showPath('map')" ng-class="{active: show == 'map'}"> HEAT MAP <span class="big"></span><span class="small"></span></div>
+    <div class="col-md-4" ng-click="showPath('info')" ng-class="{active: show == 'info'}">INFORMATION <span class="big"></span><span class="small"></span></div>
+</div>
+<div ng-show="(show == 'charts')">
+    <linechart data="temperature1" options="temperature1Options" mode="" width="" height="400"></linechart>
+    <linechart data="temperatureSensor2" options="temperatureSensor2Options" mode="" width="" height="400"></linechart>
+    <linechart data="humidity" options="humidityOptions" mode="" width="" height="400"></linechart>
+</div>
